@@ -11,7 +11,7 @@ public class StoreManagerTrack {
             for(int i=0;i <5; i++) {
                 productTotal[j] += salesData[i][j];
             }
-            System.out.println(productTotal[j]);
+            //System.out.println(productTotal[j]);
         }
     for(int i=0; i < 3;i++){
         productTotalSales = productTotal[i];
