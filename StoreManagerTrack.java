@@ -7,20 +7,12 @@ public class StoreManagerTrack {
                              {50,30,40}};
         int productTotal[] = new int[3];
         int productTotalSales;
-        for(int i=0; i< 5;i++) {
-            for(int j=0; j< 3;j++) {
-                switch(j) {
-                    case 0: productTotal[0] += salesData[i][j];
-                            break;
-                    case 1: productTotal[1] += salesData[i][j];
-                            break;
-                    case 2: productTotal[2] += salesData[i][j];
-                            break;
-                    default: System.out.println("Invalid condition");
-                            break;
-                }
+        for(int j=0; j <3; j++) {
+            for(int i=0;i <5; i++) {
+                productTotal[j] += salesData[i][j];
             }
-    }
+            System.out.println(productTotal[j]);
+        }
     for(int i=0; i < 3;i++){
         productTotalSales = productTotal[i];
         if(productTotalSales >= 500) {
