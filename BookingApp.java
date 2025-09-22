@@ -44,6 +44,7 @@ public class BookingApp {
             int fareDistance = objCar.calculateFare(distanceKm);
             System.out.println("Total Fare: "+fareDistance);
         }
+        sc.close();
 
     }
     
